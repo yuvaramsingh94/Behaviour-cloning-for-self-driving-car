@@ -16,11 +16,7 @@ steps of this project are the following:
 
 [image1]: ./img/conv.jpg "Convolution layer"
 [image2]: ./img/fullyConnected.jpg "Fully connected"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image3]: ./img/fullModel.jpg "full model"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -91,7 +87,7 @@ after training this model , i was able to drive around the given track autonomou
 #### 2. Final Model Architecture
 
 this is my final model 
-![alt text][image1]
+![alt text][image3]
 
 #### 3. Creation of the Training Set & Training Process
 To create a more generalized model to drive the car , i started collecting the training data from the muddy track (easiest one) . i drove two laps around the track . one lap in the opposite side , one lap on the other track (the hard one)
