@@ -1,7 +1,7 @@
 **Behavioral Cloning Project**
 
 steps of this project are the following:
-* use the simulator to collect the image and steering angle as labels (best practice is to drive around the track twice and also in the opposite direction )
+* use the simulator to collect the image frame from center , right and left cam , steering angle as labels (best practice is to drive around the track twice and also in the opposite direction )
 * import the image and steering angle 
 * construct neural network to calculate the weights to find and adjust the steering angle to drive the car inside the track 
 * train a model based on the training data collected from the step 1 and save the model 
