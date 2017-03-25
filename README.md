@@ -1,7 +1,3 @@
-#**Behavioral Cloning** 
-
-
-
 **Behavioral Cloning Project**
 
 steps of this project are the following:
@@ -76,52 +72,28 @@ I collected the training data by driving around the track two times by maintaini
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
+The overall strategy for deriving a model architecture was to start with a model which i am femilier with and work through other models by imcreasing the depth , adding more conv layers , changing the number of nodes in the fully connected layers 
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+My first step was to use a convolution neural network model similar to the Lenet  . the lenet has a powerful image classification properties , this model works good on strainght roads but not on curves . 
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
+After going through a lot of neural network papers , i found Nvidia's selfdriving cars paper provided by udacity . after going through the paper , i modified the conv layers to fit the image shape 160X320X3 provided by the simulator 
 
-To combat the overfitting, I modified the model so that ...
+my model consist of 5 conv layers fitted with max pool and 4 fully connected layers followed by a single node . it  takes 160X320X3 as input and spits out 1 stearing angle 
 
-Then I ... 
 
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
+after training this model , i was able to drive arount the given track autonomously without leaving hte track 
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
-
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
+this is my final model 
 ![alt text][image1]
 
 ####3. Creation of the Training Set & Training Process
-
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
-
-![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
-
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+To create a more generalized model to drive the car , i started collecting the training data from the muddy track (easiest one) . i drove two laps around the track . one lap in the opposite side , one lap on the other track (the had one)
+After the collection process, I had 23000 (aprox) number of data points. I then increased  this data by fliping the images , using the right , left images to serve as a recovery image (if my model sees those image  , it stears hard towerds the center) 
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I shuffled the training data nad used 30% for validation data 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+i used these data to train and test my model , i run my model for 10 epochs and saved it under the name modelNvidiaMax_2.h5 . using this model, i was able to drive the car within the road as shown in hte video 
