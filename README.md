@@ -14,8 +14,8 @@ steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
+[image1]: ./img/conv.jpg "Convolution layer"
+[image2]: ./img/fullyConnected.jpg "Fully connected"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
@@ -54,7 +54,7 @@ The model.py file contains the code for training and saving the convolution neur
 My model consist 5 convolution layers with maxpooling layers . the layer structure is discribed below
 ![alt text][image1]
 following these conv layers . a flatten layer and _ fully connected layer is fitted . finaly a single node is used to find the stearing angle (Regressin not classification )
-![alt text][image1]
+![alt text][image2]
 
 ####2. Attempts to reduce overfitting in the model
  
