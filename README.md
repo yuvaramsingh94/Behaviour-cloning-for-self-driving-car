@@ -1,5 +1,27 @@
 **Behavioral Cloning Project**
 
+### how to run model.py
+
+model.py program takes the training data path , output path and the system os as the argument
+
+the structure is 
+
+python model.py /path /to/the/train/data /path/to/store/final/model windows or linux
+
+the os of the system is needed because the path structure changes based on that (windows '\', linux '/')
+
+example 
+
+for windows
+
+python model.py D:\tutorials\nanodegree\SDC\unit_9_behaviour_cloning\training_data D:\tutorials\nanodegree\SDC\unit_9_behaviour_cloning\model windows
+
+for linux
+
+python model.py ~/behaviour/training ~/behaviour/model linux
+
+the main use of this is to reduce increase the flexibility of training and saving the model 
+
 steps of this project are the following:
 * use the simulator to collect the image frame from center , right and left cam , steering angle as labels (best practice is to drive around the track twice and also in the opposite direction )
 * import the image and steering angle 
