@@ -1,5 +1,8 @@
 **Behavioral Cloning Project**
 
+### video file 
+https://www.youtube.com/watch?v=YcBfHZ8OoMg&feature=youtu.be
+
 ### how to run model.py
 
 The model works with keras 2.0.1 . please use this version to review it 
