@@ -2,7 +2,7 @@
 
 ### how to run model.py
 
-model.py program takes the training data path , output path and the system os as the argument
+model.py program takes the training data path , output path and the system os as the command line argument
 
 the structure is 
 
