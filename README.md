@@ -2,6 +2,8 @@
 
 ### how to run model.py
 
+The model works with keras 2.0.1 . please use this version to review it 
+
 model.py program takes the training data path , output path and the system os as the command line argument
 
 the structure is 
@@ -22,7 +24,7 @@ python model.py ~/behaviour/training ~/behaviour/model linux
 
 the main use of this is to reduce increase the flexibility of training and saving the model 
 
-steps of this project are the following:
+### steps of this project are the following:
 * use the simulator to collect the image frame from center , right and left cam , steering angle as labels (best practice is to drive around the track twice and also in the opposite direction )
 * import the image and steering angle 
 * construct neural network to calculate the weights to find and adjust the steering angle to drive the car inside the track 
@@ -41,7 +43,7 @@ steps of this project are the following:
 [image3]: ./img/fullModel.jpg "full model"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Files Submitted & Code Quality
