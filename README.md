@@ -44,6 +44,9 @@ the main use of this is to reduce increase the flexibility of training and savin
 [image1]: ./img/conv.jpg "Convolution layer"
 [image2]: ./img/fullyConnected.jpg "Fully connected"
 [image3]: ./img/fullModel.jpg "full model"
+[image4]: ./img/picVisualization.jpg "full model"
+[image5]: ./img/visu.jpg "full model"
+[image6]: ./img/CLR.jpg "full model"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -94,6 +97,19 @@ After playing with a lot of optimizer and learning rate , i ended up using adem 
 #### 4. Appropriate training data
 
 I collected the training data by driving around the track two times by maintaining my car in the center lane , additionally i drived in the opposite direction for a single lap , aditional images where take in the trick spots where the road and the mud mixup 
+
+these are some of the images i got from the simulator which i later used to train and validate my models
+
+![alt text][image3]
+
+i used Right , Center and Left cam image to increase the number of samples and use the right and left image as recovery images
+
+![alt text][image6]
+
+this is how the steering angle is distributed . for the ease of plotting i converted float value of steering to int value 
+
+![alt text][image5]
+
 
 ### Model Architecture and Training Strategy
 
