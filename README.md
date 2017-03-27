@@ -100,7 +100,7 @@ I collected the training data by driving around the track two times by maintaini
 
 these are some of the images i got from the simulator which i later used to train and validate my models
 
-![alt text][image3]
+![alt text][image4]
 
 i used Right , Center and Left cam image to increase the number of samples and use the right and left image as recovery images
 
