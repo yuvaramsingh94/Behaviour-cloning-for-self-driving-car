@@ -1,6 +1,7 @@
 **Behavioral Cloning Project**
 
 ### video file 
+https://www.youtube.com/watch?v=MI1QZHtF4-M
 https://www.youtube.com/watch?v=YcBfHZ8OoMg&feature=youtu.be
 
 ### how to run model.py
